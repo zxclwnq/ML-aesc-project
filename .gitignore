@@ -1,5 +1,6 @@
-extracted_data/
-processed_data/
-dogs-vs-cats.zip
-archive.zip
-/extracted_data
+checker/processed_data/
+/feature_extractors/annotations/
+/feature_extractors/images/
+/found_pets_images/
+/lost_pets_images/
+/identifier/puppies_and_kittens/
