@@ -84,7 +84,7 @@ async def cmd_back(message: types.Message, state: FSMContext):
     await state.clear()
     await message.answer("Вы вернулись в главное меню.", reply_markup=main_menu_keyboard)
 
-# --- Flow: Я потерял питомца ---
+# --- Я потерял питомца ---
 @router.message(lambda m: m.text == "Я потерял питомца")
 async def lost_pet_start(message: types.Message, state: FSMContext):
     await state.set_state(LostPetStates.waiting_for_type)
@@ -197,7 +197,7 @@ async def lost_pet_info(message: types.Message, state: FSMContext):
 
     await state.clear()
 
-# --- Flow: Я нашёл питомца ---
+# --- Я нашёл питомца ---
 @router.message(lambda m: m.text == "Я нашёл питомца")
 async def found_pet_start(message: types.Message, state: FSMContext):
     await state.set_state(FoundPetStates.waiting_for_type)
@@ -290,7 +290,7 @@ async def found_pet_info(message: types.Message, state: FSMContext):
 
     await state.clear()
 
-# --- Flow: Каталог найденных питомцев ---
+# --- Каталог найденных питомцев ---
 @router.message(lambda m: m.text == "Каталог найденных питомцев")
 async def catalog_start(message: types.Message, state: FSMContext):
     await state.set_state(CatalogStates.choosing_type)
