@@ -4,3 +4,4 @@ checker/processed_data/
 /found_pets_images/
 /lost_pets_images/
 /identifier/puppies_and_kittens/
+ApiKeys.py
